@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    overflow-x: hidden;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+}
+
+header {
+    padding: 20px 60px;
+    background-color: #ffe44d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    
+
+}
+
+.burger_icon {
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+@media (max-width: 800px){
+    .burger_icon {
+        display: block;
+    }
+
+    header {
+        position: relative;
+    }
+
+    ul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: #FFE44D;
+        gap: 20px;
+        width: 120px;
+        transform: translateX(100%);
+        transition:  0.5s;
+    }
+
+    ul.nav_active{
+        transform: translateX(0);
+    }
+
+    ul li {
+        padding: 20px 20px;
+        list-style: none;
+        border-bottom: 1px solid black;
+    }
+}
+
+
+.registration_form{
+    width: 420px;
+
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registration_form h3 {
+    padding-top: 15px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.registration_form input {
+    display: flex;
+    padding: 14px;
+    border-radius: 12px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 356px;
+    height: 48px;
+    border: 1px solid #CFD8DC
+
+}
+
+.registration_form input:focus {
+    border: 1px solid #FFE44D;
+    outline: none;
+  }
+
+.registration_form input:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+.text{
+    margin-top: 24px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.reg_btn{
+    margin-top: 8px;
+    background: #FFE44D;
+    border-radius: 55px;
+    padding: 14px 98px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px transparent;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.login{
+    border-radius: 55px;
+    padding: 14px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #CFD8DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.8);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.popup.modal_active{
+    visibility: visible;
+}
+
+.popup_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.popup_content{
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.cross_icon{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+

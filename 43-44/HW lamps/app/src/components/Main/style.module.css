@@ -1,0 +1,58 @@
+.intro {
+    background-color: #4fbfa5;
+    padding: 25px 0 60px;
+}
+.wrapper {
+    width: 70%;
+    margin: auto;
+    
+}
+.intro_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+ .nav_link {
+    text-decoration: none;
+    font-size: 18px;    
+    font-style: italic;
+    color: white;
+
+ }   
+ .nav_link:last-child {
+    background-color: white;
+    padding: 10px 50px;
+    color: black;
+ }
+
+ .intro_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+ }
+.intro_img {
+    width: 60%;
+}
+.intro_text {
+    width: 30%;
+}
+.intro_title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+}
+.intro_descr {
+font-size: 20px;
+font-style: italic;
+margin: 40px 0;
+}
+.intro_btn {
+    padding: 15px 25px;
+    background-color: #00868a;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}

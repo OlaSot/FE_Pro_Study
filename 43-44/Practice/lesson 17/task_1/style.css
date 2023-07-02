@@ -1,0 +1,12 @@
+.cardElem {
+    border: 2px dashed green;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+

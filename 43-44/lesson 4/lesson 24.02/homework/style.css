@@ -1,0 +1,22 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+.tutors_container > div div {
+    height: 190px;
+    width: 190px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* .p1 {
+    background-image: url('https://www.zooplus.at/magazin/wp-content/uploads/2017/12/kitten-eingew%C3%B6hnen-768x547.jpeg');
+}
+.p2 {
+    background-image: url('https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/790/53/790-53-101P/Kitten-II-Paws--Claws-Poster.jpg');
+}
+.p3 { 
+    background-image: url('https://animonda.de/media/da/8c/f9/1656680391/kleines-kaetzchen-magazin-kitten-fuettern-titleimage-767x500.jpg');
+} */

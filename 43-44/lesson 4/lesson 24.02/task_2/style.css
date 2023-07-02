@@ -1,0 +1,6 @@
+.product_card > div{
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,25 @@
+export default function AppWithContext() {
+    const text = 'L:WNFLKWRKWNLWNEF';
+
+    return <Text4 />
+}
+
+const Text4 = () => {
+    return <Text3 />
+}
+
+const Text3 = () => {
+    return <Text2 />
+}
+
+const Text2 = () => {
+    return <Text1 />
+}
+
+const Text1 = () => {
+    return <Text />
+}
+
+const Text = () => {
+    return <p>{text}</p>
+}

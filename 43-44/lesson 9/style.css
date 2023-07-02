@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.add_task {
+    border: 2px solid black;
+    max-width: 1100px;
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_task input {
+    padding: 10px;
+}
+
+.add_task select {
+    padding: 10px;
+}
+
+.add_task button {
+    padding: 10px;
+}
+
+.tasks {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+/* 
+    реализовать стили для карточки с задачей
+    рамка шириной в 2px
+    внутренний отступ 10 пикселей
+    размер шрифта 30 пикселей
+*/
+
+.tasks div {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+

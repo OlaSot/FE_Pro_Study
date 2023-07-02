@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+.special_offers {
+    padding: 150px 0;
+
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: #00868A;
+    padding: 0 0 60px 0;
+
+}
+.all_offers {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers {
+    width: 25%;
+    margin: 0 10px;
+    background-color: #00868A;
+    color: white;
+    font-style: italic;
+}
+.offers_image {
+    width: 100%;
+}
+.descr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px;
+}
+.new {
+    position: absolute;
+    margin: 30px 30px;
+    padding: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #00868A;
+}

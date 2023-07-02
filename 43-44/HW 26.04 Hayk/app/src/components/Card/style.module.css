@@ -1,0 +1,10 @@
+.item {
+    margin: 0 auto;
+    width: 1244px;
+    height: 127px;
+    background-color: #34495E;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 90px auto;
+}
