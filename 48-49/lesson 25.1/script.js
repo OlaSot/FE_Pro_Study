@@ -105,6 +105,6 @@ inputs.forEach(input => {
 })
 
 
-function handlerChange(event) {
-    console.log(event.target);
-}
+// function handlerChange(event) {
+//     console.log(event.target);
+// }
