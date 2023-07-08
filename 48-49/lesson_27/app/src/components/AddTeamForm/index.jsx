@@ -26,7 +26,6 @@ export default function AddTeamForm() {
                 <p>Add command</p>
                 <input type="text" name='team' placeholder='Team name'/>
                 <button>Add</button>
-              
             </label>
         </form>
     </div>
