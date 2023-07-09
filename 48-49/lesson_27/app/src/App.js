@@ -12,13 +12,20 @@ function App() {
 
   const [teams, setTeams] = useState([])
 
+  const [players, setPlayers] = useState([])
+
   const add_team = team => {
     setTeams([...teams, team])
   }
 
+  const add_player = player => {
+    setPlayers([...players, player])
+  }
+
+
   return (
     <div>
-      <Context.Provider value={{add_team, teams}}>
+      <Context.Provider value={{add_team, teams, players, add_player}}>
         <NavMenu />
           <Routes>
             <Route path='/' element={<MainPage/>}/>
