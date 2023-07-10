@@ -5,6 +5,7 @@ import { Context } from '../../context'
 export default function PlayerItem({ id, user_name, team,  }) {
 
 const {delete_player} = useContext(Context)
+
   return (
 
     <div onClick={() => delete_player(id)} className={s.player}>
