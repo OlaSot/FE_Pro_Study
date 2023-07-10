@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://img.freepik.com/free-photo/abstract-background-with-ink_1112-820.jpg?w=996&t=st=1688983046~exp=1688983646~hmac=9eda33e01bf5197442fe6475b737e926281ab7f9eca195df1a43a88176350759');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
