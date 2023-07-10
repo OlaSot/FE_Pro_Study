@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://img.freepik.com/free-vector/decorative-yellow-watercolor-brush-stroke-design-background_1055-17735.jpg?w=1480&t=st=1688989938~exp=1688990538~hmac=d39d2f1df69b0f75864a203c6f216fef94eaba80cc60f4b1fd3af413fc036903');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
