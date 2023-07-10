@@ -1,0 +1,10 @@
+Создать форму AddTeamForm (параграф, инпут, кнопка), при сабмите формы выводить в консоль данные, введенные в инпут. Стилизовать форму
+Добавить AddTeamForm в ConfigurationsPage
+Создать форму AddPlayerForm (параграф, инпут, кнопка), при сабмите формы выводить в консоль данные, введенные в инпут. Стилизовать форму
+Добавить AddPlayerForm в ConfigurationsPage
+Создать PlayersContainer и PlayerItem
+Добавить PlayersContainer в TeamsPage
+Создать новое состояние players(+setPlayers)
+При сабмите формы AddPlayerForm собрать данные, сформировать объект
+Написать функцию add_player
+Из состояния players отрисовать PlayerItem в PlayersContainer
