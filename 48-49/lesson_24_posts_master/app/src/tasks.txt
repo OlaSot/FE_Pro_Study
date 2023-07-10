@@ -1,0 +1,16 @@
+1. Создать CardItem и CardsContainer
+2. Добавить CardsContainer в App
+3. В App создать состояние cards(+setCards) и положить в изначальное состояние массив words_data
+4. Из сосотояния cards в CardsContainer отрисовать карточки (CardItem)
+5. Стилизовать карточки и контейнер
+6. Добавить к каждой карточке крестик, при клике на который карточка будет удаляться
+7. Создать TriggersContainer и TriggerBtn (div)
+8. Добавить TriggersContainer в App
+9. Добавить TriggerBtn в TriggersContainer
+10. При клике на кнопки rus и eng переворачивать все карточки на соответствующую сторону
+11. При клике на карточку менять ее язык (map + if, find)
+12. Создать AddCardForm (2 инпута + кнопка). При сабмите форма собирает данные, формирует объект и выводит объект в консоль
+id: unique
+rus: input
+eng: input
+lang: 'eng'

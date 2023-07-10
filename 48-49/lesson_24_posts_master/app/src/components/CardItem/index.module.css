@@ -1,0 +1,17 @@
+.card_item{
+    border: 2px solid rgb(41, 128, 185);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.cross {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
