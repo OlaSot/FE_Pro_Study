@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url('https://img.freepik.com/free-vector/corporate-blank-orange-background-vector-business_53876-174920.jpg?w=740&t=st=1688366539~exp=1688367139~hmac=1850ba41d7c514f94f7ec054c0351fd0783a1cc9e8eb28992ccc43bff6b5beda');
+
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
