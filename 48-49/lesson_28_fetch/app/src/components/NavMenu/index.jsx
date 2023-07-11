@@ -5,7 +5,7 @@ import s from './index.module.css'
 export default function NavMenu() {
   return (
     <div className={s.nav_menu}>
-        <Link to ='/'>Products</Link>
+        <Link to ='/'>Posts</Link>
         <Link to = '/users_page'>Users</Link>
     </div>
   )
