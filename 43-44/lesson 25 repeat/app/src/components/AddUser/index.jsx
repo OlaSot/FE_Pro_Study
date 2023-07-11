@@ -1,5 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import { addAction } from '../../store/reducer/userReducer'
+import s from './index.module.css'
 
 export default function AddUser() {
 
@@ -17,7 +19,7 @@ export default function AddUser() {
             age: +age.value,
             gender:gender.value
         }
-        dispatch({type: 'ADDUSER', payload:newUSer})
+        dispatch(addAction(newUSer))
         e.target.reset()
     }
 
@@ -25,7 +27,7 @@ export default function AddUser() {
 
 
 
-    <form onSubmit={submit}>
+    <form className={s.form} onSubmit={submit}>
         <input type="text" name='name' />
         <input type="text" name='surname' />
         <input type="text" name='age' />

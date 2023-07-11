@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './index.module.css'
 import { useDispatch } from 'react-redux'
+import { addNumAction, removeAction, substructAction } from '../../store/reducer/userReducer'
 
 export default function UserItem({id, name, lastname, age, gender}) {
 
@@ -15,11 +16,11 @@ export default function UserItem({id, name, lastname, age, gender}) {
             <p>{name} {lastname}</p>
             <div className={s.age_block}>
                 <p>{age}</p>
-                <button onClick={() => {dispatch({type: 'ADDNUM', payload: id})}}>+</button>
-                <button onClick={() => {dispatch({type: 'SUBSTRUCT', payload: id})}}>-</button>
+                <button onClick={() => {dispatch(addNumAction(id))}}>+</button>
+                <button onClick={() => {dispatch(substructAction(id))}}>-</button>
 
             </div>
-            <button onClick={() => {dispatch({type: 'REMOVE', payload: id})}} className={`${s.custom_btn} btn_6`}><span>DELETE</span></button>
+            <button onClick={() => {dispatch(removeAction(id))}} className={`${s.custom_btn} btn_6`}><span>DELETE</span></button>
         </div>
     )
 }

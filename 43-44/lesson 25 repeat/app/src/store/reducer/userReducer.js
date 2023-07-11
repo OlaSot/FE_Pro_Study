@@ -6,12 +6,26 @@ const initialState = [
     { "id": 5, "name": "Michael", "lastname": "Wilson", "age": 45, "gender": "male" }
     ]
 
+const ADDUSER = 'ADDUSER'
+const ADDNUM = 'ADDNUM'
+const REMOVE = 'REMOVE'
+const SUBSTRUCT = 'SUBSTRUCT'
+
+
+export const addAction = (payload) => ({type: ADDUSER, payload})
+
+export const addNumAction = (payload) => ({type: ADDNUM, payload })
+
+export const removeAction = (payload) => ({type: REMOVE, payload})
+
+export const substructAction = (payload) => ({type: SUBSTRUCT, payload})
+
 export const userReducer = (state=initialState, action) => {
-    if(action.type === 'REMOVE') {
+    if(action.type === REMOVE) {
         return state.filter(el => el.id !== action.payload) 
         // (({id}) => id !== action.payload) - c деструктуризацией
     }
-    else if(action.type === 'ADDNUM') {
+    else if(action.type === ADDNUM) {
         state.find(el => el.id === action.payload).age++
         return [...state]
         
@@ -20,16 +34,16 @@ export const userReducer = (state=initialState, action) => {
         // }
         // return ageplus()
     }
-    else if(action.type === 'SUBSTRUCT') {
+    else if(action.type === SUBSTRUCT) {
         const target = state.find(el => el.id === action.payload)
         if(target.age > 0) {
             target.age--
         }
         return [...state]
     }
-    else if(action.type === 'ADDUSER') {
+    else if(action.type === ADDUSER) {
         return [...state, {id:Date.now(), ...action.payload}]
-    }
+    } 
     return state
 }
 
