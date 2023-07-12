@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://img.freepik.com/free-vector/spring-floral-watercolor-background-vector-green-with-leaf-illustration_53876-126350.jpg?w=740&t=st=1689154270~exp=1689154870~hmac=933807ae868dfeb60c217e29e5344be075bdf8f61a623344d1b5c943e8abab8b');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
