@@ -1,0 +1,16 @@
+.item{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+    
+}
+
+.item span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
