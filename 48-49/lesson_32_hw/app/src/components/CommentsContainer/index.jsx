@@ -2,7 +2,7 @@ import React from 'react'
 import CommentItem from '../CommentItem'
 import AddCommentForm from '../AddCommentForm'
 
-export default function CommentsContainer({comments=[], post_id}) {
+export default function CommentsContainer({comments, post_id}) {
   console.log(comments, post_id);
   return (
     <div>

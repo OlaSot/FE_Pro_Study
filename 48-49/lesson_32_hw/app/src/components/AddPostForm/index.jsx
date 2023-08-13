@@ -15,7 +15,8 @@ export default function AddPostForm() {
         
             title: title.value,
             description: description.value,
-            like: false
+            like: false,
+            comments: []
         }
         dispatch(addAction(new_post));
         e.target.reset()
