@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { changeLikeAction } from '../../store/postReducer'
+import s from './index.module.css'
 
 export default function LikeBtn({id, like}) {
 
@@ -12,7 +13,7 @@ export default function LikeBtn({id, like}) {
     }
 
   return (
-    <div style={styles} onClick={() => dispatch(changeLikeAction(id, like))}>
+    <div className={s.LikeBtn} style={styles} onClick={() => dispatch(changeLikeAction(id, like))}>
         Like?
     </div>
   )

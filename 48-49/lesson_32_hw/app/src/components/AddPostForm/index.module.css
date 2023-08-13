@@ -1,0 +1,23 @@
+.btn {
+    background-color: rgb(243, 170, 82);
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid rgb(25, 42, 50);
+    cursor: pointer;
+}
+
+.inputs {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(37, 50, 25);
+    outline: none;
+}
+
+.AddPostForm {
+    display: flex;
+    gap: 5px;
+}

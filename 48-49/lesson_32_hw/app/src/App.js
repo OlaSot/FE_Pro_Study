@@ -4,7 +4,7 @@ import PostsContainer from './components/PostsContainer';
 
 function App() {
   return (
-    <div>
+    <div className='main'>
       <AddPostForm />
       <PostsContainer />
     </div>
