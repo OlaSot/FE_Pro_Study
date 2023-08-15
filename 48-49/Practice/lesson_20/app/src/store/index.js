@@ -1,5 +1,5 @@
 import {combineReducers, createStore} from 'redux'
-import { users } from '../data/users'
+
 import { userReducer } from './userReducer'
 import { taskReducer } from './taskReducer'
 
