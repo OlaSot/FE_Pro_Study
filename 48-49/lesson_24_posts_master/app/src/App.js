@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import CardsContainer from './components/CardsContainer/CardsContainer';
 import { words_data } from './data/words_data';
@@ -10,9 +10,15 @@ import { Context } from './context';
 
 function App() {
 
-  const [cards, setCards] = useState(words_data)
+  const [cards, setCards] = useState(() => JSON.parse(localStorage.getItem('words')) || words_data)
   const delete_card = id => setCards(cards.filter(el => el.id !== id))
 
+  // localStorage.getItem()
+
+  useEffect(() => {
+
+  },[cards])
+  localStorage.setItem('words', JSON.stringify(cards))
   // const change_to_rus = () => {
   //   setCards(cards.map(el => {
   //     return {
